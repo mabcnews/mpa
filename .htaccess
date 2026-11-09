@@ -1,0 +1,10 @@
+# Enable the rewrite engine
+RewriteEngine On
+
+# Custom 404 error page (create a file named 404.html in your root)
+ErrorDocument 404 /404.html
+
+# Optional: redirect all non-existing files/folders to the homepage instead
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^ / [L,R=301]
